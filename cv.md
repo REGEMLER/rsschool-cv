@@ -39,12 +39,17 @@ function minMax(arr){
 ***
 ## Experience: 
 I have done some little projects during my education: 
-[GameMemo](https://regemler.github.io/Cards/)
-[ClothingShop](https://regemler.github.io/ClothingStor)
-[FLowerShop](https://regemler.github.io/Plant/)
-## Courses:
++ [GameMemo](https://regemler.github.io/Cards/)
++ [ClothingShop](https://regemler.github.io/ClothingStor)
++ [FLowerShop](https://regemler.github.io/Plant/)
+## Education and Courses:
+- SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL (Hydro-Pneumatic Systems of Mobile and Technological Machines)
 - IT Step (Front-end developer)
 - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 ***
+## Languages:
++ English - my level of English is in the range of B1 INTERMEDIATE to B2 UPPER INTERMEDIATE, according to the guidelines set by the CEFR. 
++ Spanish - my level of Spanish is B2 UPPER INTERMEDIATE, according to the guidelines set by the CEFR.
++ Russian - Native
 
 
