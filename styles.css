@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(98, 104, 10);
+}
+
+.wrapper{
+    max-width: 1440px;
+    padding: 40px;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    width: 100%;
+    margin: 20px auto;
+}
+h2{
+    width: 100%;
+    margin: 10px auto;
+}
+p,code{
+    font-size: 20px;
+}
+a,li,p,h2,h3,dd,dt,code{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white; 
+}
+a:hover{
+    text-decoration: underline;
+}
+dt{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px;
+}
