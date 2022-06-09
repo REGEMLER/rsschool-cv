@@ -1,3 +1,12 @@
+:root {
+    --violetLight: #5b006a;
+    --violetDark:#380042;
+    --light:#fbe9f8;
+    --dark:#1d1a21;
+  }
+html {
+    scroll-behavior: smooth; 
+}
 *,
 *::before,
 *::after {
@@ -15,7 +24,7 @@ a{
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
-    color: black;
+    color: var(--dark);
     margin: 20px 0;
 }
 .wrapper, header, footer, main{
@@ -27,13 +36,13 @@ h2{
 .wrapper{
     min-width: 320px;
 }
-header{
+.header{
     width: 100vw;
-    background-color: #1d1a21;
+    background-color: var(--dark);
     margin: 0 auto;
     overflow: hidden;
 }
-header nav{
+.header nav{
     width: 100%;
     padding: 15px;
     margin: 0 auto;
@@ -42,33 +51,34 @@ header nav{
 #checkbox-menu{
     display: none;
 }
-header nav ul{
+.header-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
 }
-header nav ul li a{
+.header nav ul li a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    color: #fbe9f8;
+    color: var(--light);
     transition: all .3s linear;
 }
-header nav ul li a:hover{
+.header nav ul li a:hover{
     text-decoration: underline;
 }
-main{
+.main{
     display: flex;
     justify-content: center;
 }
-aside{
+.aside{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
-    background-color: #fceaf9;
+    background-color: var(--light);
     padding: 10px;
+    flex-basis: 45%;
 }
 .avatar{
     width: 200px;
@@ -93,7 +103,7 @@ aside{
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: #1d1a21;
+    color: var(--dark);
     margin: 10px 0;
 }
 .contact-link:hover{
@@ -130,7 +140,7 @@ aside{
 .courses{
     margin: 20px auto;
     align-self: flex-start;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .list-courses dt{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -148,28 +158,28 @@ aside{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     margin: 5px 0;
-    color: #1d1a21;
+    color: var(--dark);
 }
 .list-courses h4{
     display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     margin: 5px 0;
-    color: #fbe9f8;
+    color: var(--light);
     border-radius: 2px;
-    background-color: #380042;
+    background-color: var(--violetDark);
     padding: 4px;
 }
 .skils{
     margin: 20px auto;
     align-self: flex-start;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .skils .list-item{
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: #1d1a21;
+    color: var(--dark);
     margin: 10px 0;
 } 
 .skils .list-item p{
@@ -185,12 +195,12 @@ aside{
 }
 .skils .star{
     display: inline;
-    background-color: #fbe9f8;
+    background-color: var(--light);
     position: absolute;
     top: 0;
     width: 15px;
     height: 15px;
-    border: 1px solid #1d1a21;
+    border: 1px solid var(--dark);
     border-radius: 50%;
     transition: all linear .3s;
 }
@@ -217,9 +227,164 @@ aside{
     visibility: hidden;
 }
 .skils input[type="checkbox"]:checked+label{
-    background-color: #380042;
+    background-color: var(--violetDark);
+}
+.section{
+    padding:10px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--dark);
+    margin: 20px 0;
+}
+h1 span{
+    font-family: Lobster, Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--violetLight);
+}
+.about-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.about p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.experience p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.list_works{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.experience li{
+    transition: all linear .4s;
+}
+.experience li:hover{
+    transform: scale(1.1);
+}
+.experience a{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: var(--light);
+    border-radius: 2px;
+    background-color: var(--violetDark);
+    transition: all .3s linear;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.experience a:hover{
+    text-decoration: underline;
+}
+.code{
+    margin: 20px auto;
+    align-self: flex-start;
+    padding: 10px;
+    background-color: var(--light);
+}
+.code-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.code-title span{
+    font-family: Lobster, Tahoma, Geneva, Verdana, sans-serif;
+}
+.code-subtitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.code p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--light);
+    background-color: var(--dark);
+}
+pre .green{
+    color:#549ffb;
+}
+pre .yellow{
+    color:#b3e18b;
+}
+pre .purple{
+    color:#b879ac;
+}
+pre .blue{
+    color:#4464ce;
+}
+.languages{
+    margin: 20px auto;
+    align-self: flex-start;
+    padding: 10px;
+}
+.list-languages dt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light);
+    border-radius: 2px;
+    background-color: var(--violetDark);
+    padding: 10px;
 }
 
+.list-languages dd{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 10px;
+}
+.header{
+    width: 100vw;
+    background-color: var(--dark);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.footer{
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: var(--light);
+}
+.footer-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer-inner li{
+    margin-right: 100px;
+}
+.footer-logo{
+    width: 100px;
+    height: 100px;
+}
+.footer-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer-inner li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: var(--dark);
+    transition: all .3s linear;
+}
+.footer-inner li a:hover{
+    text-decoration: underline;
+}
 
 @media screen and (max-width:767px) {
 .toggle{
@@ -229,12 +394,12 @@ aside{
     font-size: 20px;
     line-height: 40px;
     width: 100%;
-    color: black;
-    background-color: #380042;
+    color:var(--dark);
+    background-color: var(--violetDark);
     transition: all 0.2s linear;
 }
 .toggle:hover{
-    background-color: #5b006a;
+    background-color: var(#5b006a);
 }
 #checkbox-menu:checked + label .header-nav{
     height: 300px;
@@ -243,10 +408,7 @@ aside{
     transition: all .5s linear;
 }
 .header-nav{
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     height: 0;
     margin: 0;
     opacity: 0;
@@ -273,5 +435,15 @@ aside{
 }
 .skils{
     align-self: center;
+} 
+ .list_works{
+    flex-direction: column;
+} 
+.footer-inner{
+    flex-direction: column;
+}
+.footer-inner li{
+    margin-right: 0;
+    margin-bottom: 10px;        
 }
 }
