@@ -47,8 +47,7 @@ h2{
     padding: 15px;
     margin: 0 auto;
 }
-.toggle,
-#checkbox-menu{
+.toggle{
     display: none;
 }
 .header-nav{
@@ -154,13 +153,13 @@ h2{
 .list-courses dt::first-letter{
     text-transform: uppercase;
 }
-.list-courses dd{
+.course-name{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     margin: 5px 0;
     color: var(--dark);
 }
-.list-courses h4{
+.course-year{
     display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -407,18 +406,9 @@ h1 span{
 .toggle:hover{
     background-color: var(#5b006a);
 }
-#checkbox-menu:checked + label .header-nav{
-    height: 300px;
-    opacity: 1;
-    visibility: visible;
-    transition: all .5s linear;
-}
 .header-nav{
     flex-direction: column;
-    height: 0;
     margin: 0;
-    opacity: 0;
-    visibility: hidden;
     transition: height .3s linear;
 }
 .header-nav li{

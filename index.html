@@ -14,19 +14,16 @@
     <div class="wrapper">
         <header class="header">
             <nav>
-                <input type="checkbox" id="checkbox-menu">
-                <label for="checkbox-menu">
-                    <ul class="header-nav">
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#contants">Contants</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#skils">Skils</a></li>
-                        <li><a href="#code">Code</a></li>
-                        <li><a href="#languages">Languages</a></li>
-                    </ul>
-                    <span class="toggle">☰</span>
-                </label>
+                <ul class="header-nav" id="header-nav">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contants">Contants</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#skils">Skils</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+                <span class="toggle" id="toggle">☰</span>
             </nav>
         </header>
         <main class="main">
@@ -46,14 +43,14 @@
                     <h2>Education and Courses</h2>
                     <dl class="list-courses">
                         <dt>SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL</dt>
-                        <dd>Hydro-Pneumatic Systems of Mobile and Technological Machines</dd>
-                        <h4>2014-2019</h4>
+                        <dd class="course-name">Hydro-Pneumatic Systems of Mobile and Technological Machines</dd>
+                        <dd class="course-year">2014-2019</dd>
                         <dt>IT Step</dt>
-                        <dd>Front-end developer</dd>
-                        <h4>2021-2022</h4>
+                        <dd class="course-name">Front-end developer</dd>
+                        <dd class="course-year">2021-2022</dd>
                         <dt>RS Schools Course</dt>
-                        <dd>«JavaScript/Front-end. Stage 0» (in progress)</dd>
-                        <h4>2022</h4>
+                        <dd class="course-name">«JavaScript/Front-end. Stage 0» (in progress)</dd>
+                        <dd class="course-year">2022</dd>
                     </dl>
                 </div>
                 <div class="skils" id="skils">
@@ -150,7 +147,7 @@
                                     <label class="star star4" for="skil4-item4"></label>
                                 </div> 
                                 <div class="star-item star-item5">
-                                    <input onclick="return false" type="checkbox" id="skil5-item5">
+                                    <input onclick="return false" type="checkbox" id="skil4-item5">
                                     <label class="star star5" for="skil5-item5"></label>
                                 </div> 
                             </div>
@@ -246,7 +243,7 @@
                                     <label class="star star4" for="skil8-item4"></label>
                                 </div> 
                                 <div class="star-item star-item5">
-                                    <input onclick="return false" type="checkbox" id="skil1-item5" checked>
+                                    <input onclick="return false" type="checkbox" id="skil8-item5" checked>
                                     <label class="star star5" for="skil1-item5"></label>
                                 </div> 
                             </div>
@@ -309,5 +306,21 @@
             </ul>
         </footer>
     </div>
+    <script>
+        const toggle = document.getElementById(`toggle`);
+        const menu = document.getElementById(`header-nav`);
+        toggle.addEventListener(`click`, () =>{
+            if( menu.style.opacity === `1` && menu.style.height === `300px`){
+                menu.style.height = `0`;
+                menu.style.visibility = `hidden`;
+                menu.style.opacity = `0`;
+
+            } else{
+                menu.style.height = `300px`;
+                menu.style.visibility = `visible`;
+                menu.style.opacity = `1`;
+                }
+            })
+    </script>
 </body>
 </html>
