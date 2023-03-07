@@ -44,10 +44,10 @@ I have done some little projects during my education:
 + [FLowerShop](https://regemler.github.io/Plant/)
 ## Education and Courses:
 - SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL (Hydro-Pneumatic Systems of Mobile and Technological Machines)
-- IT Step (Front-end developer)
-- RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+- IT Step (Front-end developer) 2022
+- RS Schools Course «JavaScript/Front-end. Stage 0» 2022
 ***
 ## Languages:
-+ English - my level of English is in the range of B1 INTERMEDIATE to B2 UPPER INTERMEDIATE, according to the guidelines set by the CEFR. 
-+ Spanish - my level of Spanish is B2 UPPER INTERMEDIATE, according to the guidelines set by the CEFR.
++ English - my English level is B1 INTERMEDIATE, according to the guidelines set by the CEFR. 
++ Spanish - my Spanish level is B1 INTERMEDIATE, according to the guidelines set by the CEFR.
 + Russian - Native
