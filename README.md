@@ -1,1 +1,0 @@
-# Yaroslaw Night 
