@@ -271,42 +271,6 @@ body{
     align-items: center;
 }
 
-.arrow{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid var(--Light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition:  background-color linear 0.7s, transform linear 0.7s;
-}
-
-.arrow:hover{
-    transform: scale(1.05);
-    background-color:var(--Lighther);
-}
-.arrow:active{
-    transform: scale(0.95);
-}
-
-.arrow img{
-    width: 14px;
-    height: 6px;
-}
-
-.experience__carusel{
-    max-width: 810px;
-    overflow: hidden;
-}
-
-.experience__inner{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-}
 
 .experience__section{
     display: flex;
@@ -359,44 +323,6 @@ body{
 .experience__link:hover{
     transform: scale(1.1);
     background-color: var(--Lighther);
-}
-
-@keyframes slider-right{
-    from{ left: 0px;}
-    to{left: -810px;} 
-}
-
-@keyframes slider-right-small{
-    from{ left: 0px;}
-    to{left: -200px;} 
-}
-
-@keyframes slider-left{
-    from{ left: 0px;}
-    to{left: 810px;} 
-}
-
-@keyframes slider-left-small{
-    from{ left: 0px;}
-    to{left: 200px;} 
-}
-
-.carusel-left{
-    animation-name: slider-left;
-    animation-duration: 2s;
-}
-
-.carusel-right{
-    animation-name: slider-right;
-    animation-duration: 2s;
-}
-
-.experience__back, .experience__forward{
-    opacity: 0;
-}
-
-.slide__animated{
-    opacity: 1;
 }
 
 .code{
@@ -505,14 +431,30 @@ body{
 .footer-inner{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 90%;
     margin: 0 auto;
 }
 
-.footer-inner li{
+.footer-item{
     font-size: 18px;
     color: var(--dark);
+}
+.footer-item a{
+    color: var(--dark);
+}
+
+.footer-img-container{
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.footer-img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -602,31 +544,17 @@ body{
         align-self: center;
     } 
 
-    .experience__carusel{
-        max-width: 200px;
-    }
-
     .experience__card{
         margin: 0 10px;
     }
 
-    .experience__card2,
     .experience__card3{
         display: none;
     }
 
-    .carusel-left{
-        animation-name: slider-left-small;
-        animation-duration: 1s;
-    }
-
-    .carusel-right{
-        animation-name: slider-right-small;
-        animation-duration: 1s;
-    }
-
     .footer-inner{
         flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -635,12 +563,6 @@ body{
     .list__works{
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-
-    .experience__carusel{
-        max-width: 335px;
-        order: -1;
-        flex-grow: 2
     }
 
     .experience__section{
