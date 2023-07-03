@@ -1,1 +1,1 @@
-# rsschool-cv
+https://regemler.github.io/rsschool-cv/
