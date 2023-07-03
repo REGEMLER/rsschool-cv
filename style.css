@@ -64,6 +64,9 @@ body{
     min-height: 30px;
     height: auto;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .burger{
@@ -75,6 +78,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     margin: 0 auto;
 }
 
